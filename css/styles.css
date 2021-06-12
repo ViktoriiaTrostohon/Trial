@@ -1,4 +1,8 @@
+/* o, o, 1 */
+a {color: orange;}    
+/* o, 1, 0 */
 .test-link {color: black;}
-.test-link:hover, .test-link:focus {color: rgb(255, 20, 147;}
-.test-link:active {color: teal;}
-.test-link:visited {color: orangered;}
+/* o, 1, 1 */
+a.test-link {color: teal;}
+/* .test-link:hover, .test-link:focus {color: rgb(255, 20, 147;}
+.test-link:active {color: teal;} */

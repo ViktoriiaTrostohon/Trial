@@ -1,24 +1,49 @@
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: orange;
+}
 /* Main text color color: #000000;*/
 /* Secondary text color color: rgba(0, 0, 0, 0.8); */
 /* Text/background color color: #FFFFFF; */
 /* Secondary bg color background: #E5E5E5; */
 /* Actionable items color: #18A0FB; */
 .page {
-    color: rgba(0, 0, 0, 0.8); background-color: white;
+  color: var(--primary-text-color);
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
 }
 .logo {
-    color: #18A0FB;}
-.logo:hover, .logo:focus {color: black}
+  color: var(--title-text-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
 .list {
-    list-style: none;}
-    /* Site navigation */
+  list-style: none;
+}
+/* Site navigation */
 .site-nav a {
-    color: #18A0FB;}
-.site-nav a:hover, .site-nav a:focus {color: #000;}
+  color: var(--accent-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--title-text-color);
+}
 /* Section */
-.hero-title {color:black;}
-.section-title {color: black;}
+.hero-title {
+  color: var(--title-text-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
 /* Features */
-.features .title {color: black;}
-.features .link {color: #18A0FB;}
-
+.features .title {
+  color: var(--title-text-color);
+}
+.features .link {
+  color: var(--accent-color);
+}
+/* Examples */
+.works-list .title {color: var(--title-text-color)}

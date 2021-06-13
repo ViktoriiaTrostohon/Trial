@@ -6,3 +6,6 @@ a {color: orange;}
 a.test-link {color: teal;}
 /* .test-link:hover, .test-link:focus {color: rgb(255, 20, 147;}
 .test-link:active {color: teal;} */
+body {
+    color: brown;
+}

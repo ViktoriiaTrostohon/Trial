@@ -1,7 +1,8 @@
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #000000;
-  --accent-color: orange;
+  --accent-color: #18A0FB;
+  --primary-white-color: #FFFFFF;
 }
 /* Main text color color: #000000;*/
 /* Secondary text color color: rgba(0, 0, 0, 0.8); */
@@ -31,6 +32,9 @@
 .site-nav a:focus {
   color: var(--title-text-color);
 }
+.site-nav link.current {
+    color: var(--title-text-color);
+}
 /* Section */
 .hero-title {
   color: var(--title-text-color);
@@ -42,8 +46,17 @@
 .features .title {
   color: var(--title-text-color);
 }
-.features .link {
-  color: var(--accent-color);
-}
 /* Examples */
 .works-list .title {color: var(--title-text-color)}
+/* Button */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);}
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+.button.secondary {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+}

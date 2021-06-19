@@ -9,10 +9,11 @@
 /* Text/background color color: #FFFFFF; */
 /* Secondary bg color background: #E5E5E5; */
 /* Actionable items color: #18A0FB; */
-.page {
+body {
   color: var(--primary-text-color);
   color: rgba(0, 0, 0, 0.8);
   background-color: white;
+  font-family: Montserrat, sans-serif;
 }
 .logo {
   color: var(--title-text-color);
@@ -23,6 +24,8 @@
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* Site navigation */
 .site-nav a {
@@ -36,15 +39,34 @@
   color: var(--title-text-color);
 }
 /* Section */
+.hero {
+  text-align: center;
+}
 .hero-title {
+  outline: 2px solid red;
   color: var(--title-text-color);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 .section-title {
+  outline: 2px solid red;
   color: var(--title-text-color);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 /* Features */
 .features .title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.features p {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 /* Examples */
 .works-list .title {
@@ -52,31 +74,43 @@
 }
 /* Button */
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
+  border-radius: 6px;
+  min-width: 130px;
+  padding: 11px 34px;
 }
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  text-decoration: none;
 }
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
-}
-.link {
-  display: inline-block;
-  padding: 16px 32px;
-
-  border-radius: 3px;
-  background-color: teal;
-  color: white;
-
-  font-family: sans-serif;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+  border: 1px solid var(--accent-color);
 }
-.list-item:nth-of-type(3n + 2) {
-  background-color: rosybrown;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  outline: 2px solid red;
+}
+.header {
+  background-color: yellow;
 }
